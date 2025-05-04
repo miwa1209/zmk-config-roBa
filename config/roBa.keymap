@@ -136,7 +136,7 @@
             bindings = <
 &kp Q             &lt 1 W       &lt 2 E       &lt 3 R   &lt 4 T                                                           &kp Y                    &lt 1 U  &lt 2 I                      &lt 3 O                       &lt 4 P
 &kp A             &kp S         &kp D         &kp F     &kp G     &kp LS(LG(EXCLAMATION))      &lt_to_layer_0 5 LANG2     &kp H                    &kp J    &kp K                        &kp L                         &mt RC(RIGHT_SHIFT) MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V     &kp B     &kp COLON                    &lt_to_layer_0 6 LANG1     &kp N                    &kp M    &mt RS(RIGHT_COMMAND) COMMA  &mt RA(RIGHT_COMMAND) PERIOD  &kp SLASH
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V     &kp B     &msc MOVE_Y(10)              &lt_to_layer_0 6 LANG1     &kp N                    &kp M    &mt RS(RIGHT_COMMAND) COMMA  &mt RA(RIGHT_COMMAND) PERIOD  &kp SLASH
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mkp MB2  &mkp MB1  &kp SPACE                    &mt RIGHT_SHIFT BACKSPACE  &mt RIGHT_COMMAND ENTER                                                                      &kp DEL
             >;
 
