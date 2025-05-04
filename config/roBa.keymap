@@ -26,19 +26,44 @@
             key-positions = <12 13>;
         };
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
+        mute {
+            bindings = <&kp K_MUTE>;
+            key-positions = <1 2>;
         };
 
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
+        vo-down {
+            bindings = <&kp C_VOLUME_DOWN>;
+            key-positions = <2 3>;
+        };
+
+        vo-up {
+            bindings = <&kp C_VOLUME_UP>;
+            key-positions = <3 4>;
+        };
+
+        lang2 {
+            bindings = <&kp LANG2>;
+            key-positions = <6 7>;
+        };
+
+        lang1 {
+            bindings = <&kp LANG1>;
+            key-positions = <7 8>;
+        };
+
+        big {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <19 20>;
+        };
+
+        nami {
+            bindings = <&kp TILDE>;
+            key-positions = <18 19>;
+        };
+
+        hatena {
+            bindings = <&kp QUESTION>;
             key-positions = <20 21>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
         };
     };
 
