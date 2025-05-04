@@ -49,6 +49,48 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        code_px: code_px {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANG2 &kp P &kp X>;
+            label = "CODE_PX";
+        };
+
+        code_html_title: code_html_title {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LT &kp EXCL &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp RET &kp RET &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp GT>;
+            label = "CODE_HTML_TITLE";
+        };
+
+        code_css_title: code_css_title {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH &kp STAR &kp SPACE &kp RET &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp STAR &kp FSLH>;
+            label = "CODE_CSS_TITLE";
+        };
+
+        code_css_hover: code_css_hover {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp AT &kp M &kp E &kp D &kp I &kp A &kp LPAR &kp H &kp O &kp V &kp E &kp R &kp COLON &kp H &kp O &kp V &kp E &kp R &kp RPAR &kp SPACE &kp RBKT &kp RET &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp RET &kp RBRC>;
+            label = "CODE_CSS_HOVER";
+        };
+
+        code_css_media768: code_css_media768 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp AT &kp M &kp E &kp D &kp I &kp A &kp SPACE &kp LPAR &kp M &kp A &kp X &kp MINUS &kp W &kp I &kp D &kp T &kp H &kp COLON &kp SPACE &kp N7 &kp N6 &kp N7 &kp P &kp X &kp RPAR &kp SPACE &kp RBKT &kp RET &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp RET &kp RBRC>;
+            label = "CODE_CSS_MEDIA768";
+        };
+
+        code_css_container768: code_css_container768 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp AT &kp C &kp O &kp N &kp T &kp A &kp I &kp N &kp E &kp R &kp SPACE &kp LPAR &kp M &kp A &kp X &kp MINUS &kp W &kp I &kp D &kp T &kp H &kp COLON &kp SPACE &kp N7 &kp N6 &kp N7 &kp P &kp X &kp RPAR &kp SPACE &kp RBKT &kp RET &kp RET &kp RBRC>;
+            label = "CODE_CSS_CONTAINER768";
+        };
     };
 
     behaviors {
@@ -67,50 +109,50 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                        &kp T                                                          &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                        &kp G        &kp LS(LG(S))                      &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp COLON                          &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
+&kp Q             &lt 1 W       &lt 2 E       &lt 3 R   &lt 4 T                                                           &kp Y                    &lt 1 U  &lt 2 I                      &lt 3 O                       &lt 4 P
+&kp A             &kp S         &kp D         &kp F     &kp G     &kp LS(LG(EXCLAMATION))      &lt_to_layer_0 5 LANG2     &kp H                    &kp J    &kp K                        &kp L                         &mt RC(RIGHT_SHIFT) MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V     &kp B     &kp COLON                    &lt_to_layer_0 6 LANG1     &kp N                    &kp M    &mt RS(RIGHT_COMMAND) COMMA  &mt RA(RIGHT_COMMAND) PERIOD  &kp SLASH
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mkp MB2  &mkp MB1  &kp SPACE                    &mt RIGHT_SHIFT BACKSPACE  &mt RIGHT_COMMAND ENTER                                                                      &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
-        FUNCTION {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
-            >;
-        };
-
         NUM {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                   &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
-&trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                                     &kp PIPE
+&kp EQUAL        &kp DOUBLE_QUOTES  &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                             &kp N0     &kp N1  &kp N2  &kp N3  &kp SPACE
+&kp SEMI         &kp COLON          &kp STAR         &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans        &kp MINUS    &kp DOT    &kp N4  &kp N5  &kp N6  &kp FSLH
+&kp AT_SIGN      &kp POUND          &kp AMPERSAND    &kp LBKT              &kp RBKT               &kp BSLH      &kp PLUS     &kp COMMA  &kp N7  &kp N8  &kp N9  &kp PERCENT
+&kp PRINTSCREEN  &kp TILDE          &kp EXCLAMATION  &kp LSHFT             &kp LGUI               &kp LALT      &kp LS(TAB)  &kp TAB                            &code_px
             >;
         };
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
+&kp ESCAPE     &kp LS(LG(NUMBER_4))  &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                                  &trans             &kp LS(UP)    &kp UP    &kp LA(UP)    &kp LS(LA(UP))
+&trans         &trans                &kp F7      &kp F8             &kp F9           &trans        &trans            &kp LS(LEFT)       &kp LEFT      &kp DOWN  &kp RIGHT     &kp LS(RIGHT)
+&trans         &trans                &trans      &trans             &trans           &trans        &trans            &trans             &kp LS(DOWN)  &trans    &kp LA(DOWN)  &trans
+&kp LS(LG(M))  &trans                &trans      &kp LSHFT          &kp LGUI         &kp LALT      &kp LS(LG(LEFT))  &kp LS(LG(RIGHT))                                        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
-        MOUSE {
+        MONITOR {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&kp LG(N1)  &kp LG(N2)    &kp LG(N3)     &kp F1  &kp F2                             &trans             &mkp MB5  &mkp MB4  &trans  &trans
+&trans      &kp LG(LEFT)  &kp LG(RIGHT)  &trans  &trans  &trans      &trans         &trans             &trans    &trans    &trans  &trans
+&trans      &trans        &trans         &trans  &trans  &trans      &trans         &trans             &trans    &trans    &trans  &trans
+&trans      &trans        &trans         &trans  &trans  &trans      &kp LG(MINUS)  &kp LS(LG(EQUAL))                              &trans
+            >;
+        };
+
+        CODE {
+            bindings = <
+&trans  &trans  &trans  &kp LA(Z)  &kp LS(LA(F))                      &code_html_title    &code_css_title         &code_css_hover  &trans  &trans
+&trans  &trans  &trans  &trans     &trans         &trans      &trans  &code_css_media768  &code_css_container768  &trans           &trans  &trans
+&trans  &trans  &trans  &trans     &trans         &trans      &trans  &trans              &trans                  &trans           &trans  &trans
+&trans  &trans  &trans  &trans     &trans         &trans      &trans  &trans                                                               &trans
             >;
         };
 
