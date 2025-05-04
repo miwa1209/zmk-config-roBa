@@ -85,35 +85,35 @@
         code_html_title: code_html_title {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LT &kp EXCL &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp RET &kp RET &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp GT>;
+            bindings = <&kp LT &kp EXCL &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp RET &kp RET &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp GT &kp ENTER>;
             label = "CODE_HTML_TITLE";
         };
 
         code_css_title: code_css_title {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp FSLH &kp STAR &kp SPACE &kp RET &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp STAR &kp FSLH>;
+            bindings = <&kp FSLH &kp STAR &kp SPACE &kp RET &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp STAR &kp FSLH &kp ENTER>;
             label = "CODE_CSS_TITLE";
         };
 
         code_css_hover: code_css_hover {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp AT &kp M &kp E &kp D &kp I &kp A &kp LPAR &kp H &kp O &kp V &kp E &kp R &kp COLON &kp H &kp O &kp V &kp E &kp R &kp RPAR &kp SPACE &kp RBKT &kp RET &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp RET &kp RBRC>;
+            bindings = <&kp AT &kp M &kp E &kp D &kp I &kp A &kp LPAR &kp H &kp O &kp V &kp E &kp R &kp COLON &kp H &kp O &kp V &kp E &kp R &kp RPAR &kp SPACE &kp LEFT_BRACE &kp RET &kp TAB &kp RET &kp RBRC>;
             label = "CODE_CSS_HOVER";
         };
 
         code_css_media768: code_css_media768 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp AT &kp M &kp E &kp D &kp I &kp A &kp SPACE &kp LPAR &kp M &kp A &kp X &kp MINUS &kp W &kp I &kp D &kp T &kp H &kp COLON &kp SPACE &kp N7 &kp N6 &kp N7 &kp P &kp X &kp RPAR &kp SPACE &kp RBKT &kp RET &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp RET &kp RBRC>;
+            bindings = <&kp AT &kp M &kp E &kp D &kp I &kp A &kp SPACE &kp LPAR &kp M &kp A &kp X &kp MINUS &kp W &kp I &kp D &kp T &kp H &kp COLON &kp SPACE &kp N7 &kp N6 &kp N7 &kp P &kp X &kp RPAR &kp SPACE &kp LEFT_BRACE &kp RET &kp TAB &kp RET &kp RBRC>;
             label = "CODE_CSS_MEDIA768";
         };
 
         code_css_container768: code_css_container768 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp AT &kp C &kp O &kp N &kp T &kp A &kp I &kp N &kp E &kp R &kp SPACE &kp LPAR &kp M &kp A &kp X &kp MINUS &kp W &kp I &kp D &kp T &kp H &kp COLON &kp SPACE &kp N7 &kp N6 &kp N7 &kp P &kp X &kp RPAR &kp SPACE &kp RBKT &kp RET &kp RET &kp RBRC>;
+            bindings = <&kp AT &kp C &kp O &kp N &kp T &kp A &kp I &kp N &kp E &kp R &kp SPACE &kp LPAR &kp M &kp A &kp X &kp MINUS &kp W &kp I &kp D &kp T &kp H &kp COLON &kp SPACE &kp N7 &kp N6 &kp N7 &kp P &kp X &kp RPAR &kp SPACE &kp LEFT_BRACE &kp RET &kp TAB &kp RET &kp RBRC>;
             label = "CODE_CSS_CONTAINER768";
         };
     };
@@ -135,7 +135,7 @@
         default_layer {
             bindings = <
 &kp Q             &lt 1 W       &lt 2 E       &lt 3 R   &lt 4 T                                                           &kp Y                    &lt 1 U  &lt 2 I                      &lt 3 O                       &lt 4 P
-&kp A             &kp S         &kp D         &kp F     &kp G     &kp LS(LG(EXCLAMATION))      &lt_to_layer_0 5 LANG2     &kp H                    &kp J    &kp K                        &kp L                         &mt RC(RIGHT_SHIFT) MINUS
+&kp A             &kp S         &kp D         &kp F     &lt 5 G   &kp LS(LG(EXCLAMATION))      &lt_to_layer_0 5 LANG2     &kp H                    &kp J    &kp K                        &kp L                         &mt RC(RIGHT_SHIFT) MINUS
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V     &kp B     &msc MOVE_Y(10)              &lt_to_layer_0 6 LANG1     &kp N                    &kp M    &mt RS(RIGHT_COMMAND) COMMA  &mt RA(RIGHT_COMMAND) PERIOD  &kp SLASH
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mkp MB2  &mkp MB1  &kp SPACE                    &mt RIGHT_SHIFT BACKSPACE  &mt RIGHT_COMMAND ENTER                                                                      &kp DEL
             >;
