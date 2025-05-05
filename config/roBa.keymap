@@ -182,10 +182,10 @@
 
         CODE {
             bindings = <
-&trans  &trans  &trans  &kp LA(Z)  &kp LS(LA(F))                      &code_html_title    &code_css_title         &code_css_hover  &trans  &trans
-&trans  &trans  &trans  &trans     &trans         &trans      &trans  &code_css_media768  &code_css_container768  &trans           &trans  &trans
-&trans  &trans  &trans  &trans     &trans         &trans      &trans  &trans              &trans                  &trans           &trans  &trans
-&trans  &trans  &trans  &trans     &trans         &trans      &trans  &trans                                                               &trans
+&trans  &trans  &trans  &kp LA(Z)       &kp LS(LA(F))                               &code_html_title    &code_css_title         &code_css_hover  &trans             &trans
+&trans  &trans  &trans  &trans          &trans            &trans            &trans  &code_css_media768  &code_css_container768  &trans           &kp RIGHT_COMMAND  &trans
+&trans  &trans  &trans  &trans          &trans            &trans            &trans  &trans              &trans                  &trans           &trans             &trans
+&trans  &trans  &trans  &kp LEFT_SHIFT  &kp LEFT_COMMAND  &kp LEFT_ALT      &trans  &trans                                                                          &trans
             >;
         };
 
