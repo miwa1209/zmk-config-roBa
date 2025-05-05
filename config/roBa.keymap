@@ -1,5 +1,4 @@
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
@@ -134,9 +133,9 @@
 
         default_layer {
             bindings = <
-&kp Q             &lt 1 W       &lt 2 E       &lt 3 R   &lt 4 T                                                           &kp Y                    &lt 1 U  &lt 2 I                      &lt 3 O                       &lt 4 P
-&kp A             &kp S         &kp D         &kp F     &lt 5 G   &kp LS(LG(EXCLAMATION))      &lt_to_layer_0 5 LANG2     &kp H                    &kp J    &kp K                        &kp L                         &mt RC(RIGHT_SHIFT) MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V     &kp B     &msc MOVE_Y(10)              &lt_to_layer_0 6 LANG1     &kp N                    &kp M    &mt RS(RIGHT_COMMAND) COMMA  &mt RA(RIGHT_COMMAND) PERIOD  &kp SLASH
+&kp Q             &lt 1 W       &lt 2 E       &lt 3 R   &lt 5 T                                                           &kp Y                    &lt 1 U  &lt 2 I                      &lt 3 O                       &lt 5 P
+&kp A             &lt 1 S       &lt 2 D       &lt 3 F   &lt 5 G   &kp LS(LG(EXCLAMATION))      &kp LANG2                  &kp H                    &kp J    &kp K                        &kp L                         &mt RC(RIGHT_SHIFT) MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V     &kp B     &msc MOVE_Y(10)              &kp LANG1                  &kp N                    &kp M    &mt RS(RIGHT_COMMAND) COMMA  &mt RA(RIGHT_COMMAND) PERIOD  &kp SLASH
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mkp MB2  &mkp MB1  &kp SPACE                    &mt RIGHT_SHIFT BACKSPACE  &mt RIGHT_COMMAND ENTER                                                                      &kp DEL
             >;
 
@@ -163,12 +162,21 @@
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
-        MONITOR {
+        MONITOR-SCROOL {
             bindings = <
 &kp LG(N1)  &kp LG(N2)    &kp LG(N3)     &kp F1  &kp F2                             &trans             &mkp MB5  &mkp MB4  &trans  &trans
 &trans      &kp LG(LEFT)  &kp LG(RIGHT)  &trans  &trans  &trans      &trans         &trans             &trans    &trans    &trans  &trans
 &trans      &trans        &trans         &trans  &trans  &trans      &trans         &trans             &trans    &trans    &trans  &trans
 &trans      &trans        &trans         &trans  &trans  &trans      &kp LG(MINUS)  &kp LS(LG(EQUAL))                              &trans
+            >;
+        };
+
+        MOUSE {
+            bindings = <
+&trans  &trans            &trans     &kp LS(LG(R))     &trans                      &trans  &trans    &trans    &trans    &trans
+&trans  &trans            &trans     &kp LG(F)         &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &kp LG(NUMBER_1)  &kp LG(C)  &kp LG(NUMBER_3)  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
+&trans  &trans            &trans     &trans            &trans  &trans      &trans  &trans                                &trans
             >;
         };
 
@@ -181,21 +189,12 @@
             >;
         };
 
-        SCROLL {
+        layer_6 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
-            >;
-        };
-
-        layer_6 {
-            bindings = <
-&trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
         };
     };
