@@ -158,7 +158,7 @@
 &kp ESCAPE     &kp LS(LG(NUMBER_4))  &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                                  &trans             &kp LS(UP)    &kp UP    &kp LA(UP)    &kp LS(LA(UP))
 &trans         &trans                &kp F7      &kp F8             &kp F9           &trans        &trans            &kp LS(LEFT)       &kp LEFT      &kp DOWN  &kp RIGHT     &kp LS(RIGHT)
 &trans         &trans                &trans      &trans             &trans           &trans        &trans            &trans             &kp LS(DOWN)  &trans    &kp LA(DOWN)  &trans
-&kp LS(LG(M))  &trans                &trans      &kp LSHFT          &kp LEFT_WIN     &kp LALT      &kp LS(LG(LEFT))  &kp LS(LG(RIGHT))                                        &trans
+&kp LS(LG(M))  &trans                &trans      &kp LSHFT          &kp LEFT_WIN     &kp LALT      &kp LS(LG(LEFT))  &kp LS(LG(RIGHT))                                        &kp RC(RG(Q))
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -166,10 +166,10 @@
 
         MONITOR-SCROOL {
             bindings = <
-&kp LG(N1)  &kp LG(N2)    &kp LG(N3)     &kp F1     &kp F2                                     &trans             &mkp MB5  &mkp MB4  &trans    &trans
-&trans      &kp LG(LEFT)  &kp LG(RIGHT)  &trans     &trans        &trans        &trans         &trans             &mkp MB1  &trans    &mkp MB2  &trans
-&trans      &trans        &trans         &trans     &trans        &trans        &trans         &trans             &trans    &trans    &trans    &trans
-&trans      &trans        &trans         &kp LSHFT  &kp LEFT_WIN  &kp LALT      &kp LG(MINUS)  &kp LS(LG(EQUAL))                                &trans
+&kp LG(N1)  &kp LG(N2)    &kp LG(N3)     &kp F1     &kp F2                                     &trans             &mkp MB5  &mkp MB4  &trans  &trans
+&trans      &kp LG(LEFT)  &kp LG(RIGHT)  &trans     &trans        &trans        &trans         &trans             &mkp MB1  &mkp MB2  &trans  &trans
+&trans      &trans        &trans         &trans     &trans        &trans        &trans         &trans             &trans    &trans    &trans  &trans
+&trans      &trans        &trans         &kp LSHFT  &kp LEFT_WIN  &kp LALT      &kp LG(MINUS)  &kp LS(LG(EQUAL))                              &trans
             >;
         };
 
