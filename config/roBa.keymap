@@ -54,17 +54,32 @@
 
         big {
             bindings = <&kp EXCLAMATION>;
-            key-positions = <19 20>;
+            key-positions = <32 31>;
         };
 
         nami {
             bindings = <&kp TILDE>;
-            key-positions = <18 19>;
+            key-positions = <30 31>;
         };
 
         hatena {
             bindings = <&kp QUESTION>;
+            key-positions = <32 33>;
+        };
+
+        click {
+            bindings = <&mkp MB1>;
+            key-positions = <18 19>;
+        };
+
+        click2 {
+            bindings = <&mkp MB2>;
             key-positions = <20 21>;
+        };
+
+        click3 {
+            bindings = <&mkp MB3>;
+            key-positions = <20 19>;
         };
     };
 
@@ -81,41 +96,6 @@
             #binding-cells = <0>;
             bindings = <&kp LANG2 &kp P &kp X>;
             label = "CODE_PX";
-        };
-
-        code_html_title: code_html_title {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LT &kp EXCL &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp RET &kp RET &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp GT &kp ENTER>;
-            label = "CODE_HTML_TITLE";
-        };
-
-        code_css_title: code_css_title {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp FSLH &kp STAR &kp SPACE &kp RET &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp MINUS &kp STAR &kp FSLH &kp ENTER>;
-            label = "CODE_CSS_TITLE";
-        };
-
-        code_css_hover: code_css_hover {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp AT &kp M &kp E &kp D &kp I &kp A &kp LPAR &kp H &kp O &kp V &kp E &kp R &kp COLON &kp H &kp O &kp V &kp E &kp R &kp RPAR &kp SPACE &kp LEFT_BRACE &kp RET &kp TAB &kp RET &kp RBRC>;
-            label = "CODE_CSS_HOVER";
-        };
-
-        code_css_media768: code_css_media768 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp AT &kp M &kp E &kp D &kp I &kp A &kp SPACE &kp LPAR &kp M &kp A &kp X &kp MINUS &kp W &kp I &kp D &kp T &kp H &kp COLON &kp SPACE &kp N7 &kp N6 &kp N7 &kp P &kp X &kp RPAR &kp SPACE &kp LEFT_BRACE &kp RET &kp TAB &kp RET &kp RBRC>;
-            label = "CODE_CSS_MEDIA768";
-        };
-
-        code_css_container768: code_css_container768 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp AT &kp C &kp O &kp N &kp T &kp A &kp I &kp N &kp E &kp R &kp SPACE &kp LPAR &kp M &kp A &kp X &kp MINUS &kp W &kp I &kp D &kp T &kp H &kp COLON &kp SPACE &kp N7 &kp N6 &kp N7 &kp P &kp X &kp RPAR &kp LEFT_BRACE &kp RET &kp TAB &kp RET &kp RBRC>;
-            label = "CODE_CSS_CONTAINER768";
         };
     };
 
@@ -136,8 +116,8 @@
         default_layer {
             bindings = <
 &kp Q             &lt 1 W       &lt 2 E       &lt 3 R   &lt 5 T                                               &kp Y                    &lt 1 U  &lt 2 I                      &lt 3 O                       &lt 5 P
-&kp A             &lt 1 S       &lt 2 D       &lt 3 F   &lt 5 G   &kp AT_SIGN      &kp F2                     &kp H                    &lt 1 J  &lt 2 K                      &lt 3 L                       &mt RC(RIGHT_SHIFT) MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V     &kp B     &mkp MB3         &kp F1                     &kp N                    &kp M    &mt RS(RIGHT_COMMAND) COMMA  &mt RA(RIGHT_COMMAND) PERIOD  &kp SLASH
+&kp A             &lt 1 S       &lt 2 D       &lt 3 F   &lt 5 G   &kp AT_SIGN      &kp F1                     &kp H                    &lt 1 J  &lt 2 K                      &lt 3 L                       &mt RC(RIGHT_SHIFT) MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V     &kp B     &mkp MB3         &kp F2                     &kp N                    &kp M    &mt RS(RIGHT_COMMAND) COMMA  &mt RA(RIGHT_COMMAND) PERIOD  &kp SLASH
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mkp MB2  &mkp MB1  &kp SPACE        &mt RIGHT_SHIFT BACKSPACE  &mt RIGHT_COMMAND ENTER                                                                      &kp DEL
             >;
 
@@ -146,10 +126,10 @@
 
         NUM {
             bindings = <
-&kp EQUAL        &kp DOUBLE_QUOTES  &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                             &kp N0     &kp N1  &kp N2  &kp N3  &kp SPACE
-&kp SEMI         &kp COLON          &kp STAR         &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans        &kp MINUS    &kp DOT    &kp N4  &kp N5  &kp N6  &kp FSLH
-&kp AT_SIGN      &kp POUND          &kp AMPERSAND    &kp LBKT              &kp RBKT               &kp BSLH      &kp PLUS     &kp COMMA  &kp N7  &kp N8  &kp N9  &kp PERCENT
-&kp PRINTSCREEN  &kp TILDE          &kp EXCLAMATION  &kp LSHFT             &kp LEFT_WIN           &kp LALT      &kp LS(TAB)  &kp TAB                            &code_px
+&kp EQUAL    &kp DOUBLE_QUOTES  &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                             &kp N0     &kp N1  &kp N2  &kp N3  &kp SPACE
+&kp SEMI     &kp COLON          &kp STAR         &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans        &kp MINUS    &kp DOT    &kp N4  &kp N5  &kp N6  &kp FSLH
+&kp AT_SIGN  &kp POUND          &kp AMPERSAND    &kp LBKT              &kp RBKT               &kp BSLH      &kp PLUS     &kp COMMA  &kp N7  &kp N8  &kp N9  &kp PERCENT
+&kp GLOBE    &kp TILDE          &kp EXCLAMATION  &kp LSHFT             &kp LEFT_WIN           &kp LALT      &kp LS(TAB)  &kp TAB                            &code_px
             >;
         };
 
@@ -176,7 +156,7 @@
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &lt 5 MINUS
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
@@ -184,10 +164,10 @@
 
         CODE {
             bindings = <
-&trans  &trans  &trans  &kp LA(Z)       &kp LS(LA(F))                            &code_html_title    &code_css_title         &code_css_hover  &trans             &trans
-&trans  &trans  &trans  &trans          &trans         &trans            &trans  &code_css_media768  &code_css_container768  &trans           &kp RIGHT_COMMAND  &trans
-&trans  &trans  &trans  &trans          &trans         &trans            &trans  &trans              &trans                  &trans           &trans             &trans
-&trans  &trans  &trans  &kp LEFT_SHIFT  &kp LEFT_WIN   &kp LEFT_ALT      &trans  &trans                                                                          &trans
+&trans  &trans  &trans  &kp LA(Z)       &kp LS(LA(F))                            &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans          &trans         &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans          &trans         &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp LEFT_SHIFT  &kp LEFT_WIN   &kp LEFT_ALT      &trans  &trans                          &trans
             >;
         };
 
